@@ -1,0 +1,58 @@
+.card {
+  color: white;
+  display: grid;
+  place-items: center;
+  position: relative;
+  height: 300px;
+  width: 300px;
+  background: #333;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 10px;
+  &::before {
+    content: "";
+    width: 240px;
+    height: 470px;
+    left: 10px;
+    top: -70px;
+    position: absolute;
+    background: linear-gradient(#00e5ff, #b400fb);
+    animation: animate 5s linear infinite;
+  }
+  @keyframes animate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background: rgb(48, 198, 206);
+    background: linear-gradient(
+      90deg,
+      rgba(48, 198, 206, 1) 0%,
+      rgba(51, 213, 219, 0.989233193277311) 5%,
+      rgba(43, 175, 186, 1) 25%,
+      rgba(2, 0, 36, 1) 100%,
+      rgba(0, 212, 255, 1) 100%
+    );
+    inset: 3px;
+    border-radius: 8px;
+  }
+
+  .content {
+    z-index: 1;
+    text-align: center;
+    h3 {
+      border-bottom: 1px solid gray;
+      text-transform: uppercase;
+    }
+    p {
+      margin-top: 20px;
+    }
+  }
+}

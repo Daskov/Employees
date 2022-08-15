@@ -1,0 +1,44 @@
+{
+  "users": [
+    {
+      "userEmail": "dastan@gmail.com",
+      "userPassword": "12345",
+      "post": "Designer",
+      "position": "Middle",
+      "admin": true,
+      "id": 1
+    },
+    {
+      "userEmail": "dastan@ru",
+      "userPassword": "12345",
+      "post": "Developer",
+      "position": "",
+      "admin": false,
+      "id": 2
+    },
+    {
+      "userEmail": "jgfd@ms",
+      "userPassword": "123545",
+      "post": "Designer",
+      "position": "Middle",
+      "admin": false,
+      "id": 3
+    },
+    {
+      "userEmail": "gfd@mail",
+      "userPassword": "uhgfds",
+      "post": "",
+      "position": "",
+      "admin": false,
+      "id": 4
+    },
+    {
+      "userEmail": "daskov@mail",
+      "userPassword": "iuytrew",
+      "post": "Developer",
+      "position": "Junior",
+      "admin": false,
+      "id": 5
+    }
+  ]
+}
